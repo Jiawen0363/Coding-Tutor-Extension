@@ -1,0 +1,28 @@
+You are evaluating a Python programming tutoring session. A tutor is guiding a student to complete a function from a repository.
+
+Target coding task:
+```Python
+{input_code}
+```
+
+Reference Knowledge:
+
+- The dependency paths for the {function_name} function: 
+{dependency_path}
+
+- The reference key solution steps:
+{reference_steps}
+
+Conversation context:
+{conversation}
+
+Tutor's response in this turn:
+{response}
+
+Task: Please rate the quality of the tutor's response in this turn on a scale from 0 to 1. A higher score (closer to 1) indicates that the tutor's guidance is more effective in helping the student understand and complete the task. Consider factors such as:
+- Clarity and relevance of the guidance
+- Appropriateness for the student's current knowledge level
+- Effectiveness in scaffolding the student's learning
+- Alignment with the reference knowledge and solution steps
+
+Score range: 0.0 to 1.0

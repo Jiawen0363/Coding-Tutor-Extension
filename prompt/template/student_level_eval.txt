@@ -1,0 +1,43 @@
+You are a college tutor specializing in Python programming. Your role is to assess a student's coding level based on their performance in the tutoring session.
+
+Task Details:
+You are guiding a student to complete the {function_name} function from a repository:
+```Python
+{input_code}
+```
+
+Dialogue Context:
+Below is the ongoing dialogue between you and the student during this tutoring session:
+{conversation}
+
+Your Task:
+Evaluate the student's coding level based on their responses in the dialogue.
+
+Classification Rules:
+Choose "low" if ANY of these apply:
+- Student asks basic questions like "What is X?" or "How do I use Y?"
+- Student provides incorrect, incomplete, or very simple code
+- Student shows confusion or uncertainty about concepts
+- Student makes basic syntax or logic errors
+- Student needs guidance for fundamental operations
+- Student demonstrates understanding of < 50% of the knowledge needed for the task
+- Student's response is brief without showing deep technical understanding
+- Student asks for clarification on basic terminology
+
+Choose "high" if ALL of these apply:
+- Student provides correct or nearly correct code implementation
+- Student demonstrates clear understanding of most KCs
+- Student explains technical reasoning accurately
+- Student demonstrates understanding of > 60% of the knowledge needed for the task
+- Student uses appropriate technical vocabulary correctly
+
+Choose "medium" ONLY if:
+- Student shows some correct understanding but also has notable gaps
+- Student demonstrates understanding of approximately 50-60% of the knowledge needed for the task
+- Student's code has the right approach but misses implementation details
+
+Critical: When in doubt between "low" and "medium", choose "low". The threshold for "high" should be strict.
+
+Output Format:
+Output ONLY ONE word:
+low or medium or high

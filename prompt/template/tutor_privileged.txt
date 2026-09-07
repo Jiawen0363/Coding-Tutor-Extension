@@ -1,0 +1,5 @@
+Privileged Student Profile:
+- Simulated student level: {student_level_label}
+
+Privileged Student Prior / Missing Knowledge:
+{student_prior_knowledge}
